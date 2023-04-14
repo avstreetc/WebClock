@@ -51,6 +51,18 @@ body {
     box-sizing: content-box;
 }
 
+._ibg{
+    position: relative;
+}
+
+.ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;    
+    object-fit: watch_main;
+}
 /* ------------------Шапка---------------------------- */
 
 .header {
@@ -117,12 +129,88 @@ body {
     font-size: 14px;
     line-height: 16px;
 }
-/* -------------------Main--------------------- */
-.main {
+/* -------------------Page--------------------- */
+.page {
     flex: 1 1 auto;
 }
-
+.page_mainblock {
+}
 /* -------------------Подвал--------------------- */
-.footer {
+.foother {
+}
+/* -------------------Main-block--------------------- */
 
+.mainblock {
+    position: relative;
+}
+.mainblock_container {
+}
+.main-block_body {
+    padding: 184px 0px 191px 0px;
+    position: relative;
+    z-index: 2;
+}
+.main-block_title {
+    position: absolute;
+    width: 343px;
+    height: 48px;
+    left: 185px;
+    top: 321px;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+
+    color: #1B1A17;
+    line-height: calc(59.99 / 45 * 100% );
+}
+.main-block_titletwo {
+    position: absolute;
+    width: 154px;
+    height: 31px;
+    left: 185px;
+    top: 385px;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: calc(39.99 / 30 * 100% );
+
+    color: #1B1A17;
+}
+.main-block_text {
+    position: absolute;
+    width: 258px;
+    height: 34px;
+    left: 185px;
+    top: 455px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+
+    color: rgba(27, 26, 23, 0.82);
+    line-height: calc(21.33 / 21.33 * 100% );
+}
+.main-block_buttons {
+}
+.main-block_button {
+    position: absolute;
+    width: 205px;
+    height: 64px;
+    left: 181px;
+    top: 553px;
+
+    background: #444240;
+
+}
+.main-block_image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
 }
