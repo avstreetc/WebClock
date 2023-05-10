@@ -37,11 +37,14 @@ body {
     color: black;
     font-weight: 500;
     font-family: Roboto;
+
 }
 /*------------------------------*/
 .wrapper {
     min-height: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 /*-------------------------------*/
 ._container {
@@ -52,11 +55,10 @@ body {
 }
 
 ._ibg{
-    position: relative;
+
 }
 
 .ibg img {
-    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
@@ -71,15 +73,17 @@ body {
     left: 0;
     top: 0;
     z-index: 50;
+    background: #FDFDFB;
+
 }
 .header_container {
     display: flex;
-    min-height: 80px;
+    min-height: 85px;
     align-items: center;
 }
 .header_logo {
-
-    font-weight: 100;
+    display: inline-flex;
+    align-items: center;
     width: 103.68px;
     height: 26px;
     left: 97px;
@@ -108,7 +112,7 @@ body {
 }
 
 .menu {
-    padding: 5px 0px;
+    padding: 5px 150px;
 }
 .menu_list {
     flex-wrap: wrap;
@@ -141,23 +145,39 @@ body {
 /* -------------------Main-block--------------------- */
 
 .mainblock {
-    position: relative;
+    background: #FDFDFB;
+
 }
 .mainblock_container {
 }
 .main-block_body {
-    padding: 184px 0px 191px 0px;
     position: relative;
     z-index: 2;
 }
+.main-block_money {
+    position: absolute;
+    width: 140px;
+    height: 16px;
+    left: 583px;
+    top: 223px;
+}
+
+.main-block_diametr {
+    position: absolute;
+
+    width: 122px;
+    height: 16px;
+    left: 1130px;
+    top: 709px;
+
+}
 .main-block_title {
     position: absolute;
+    padding: 298px 0px 0px 185px;
     width: 343px;
     height: 48px;
-    left: 185px;
-    top: 321px;
 
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display',serif;
     font-style: normal;
     font-weight: 400;
     font-size: 45px;
@@ -167,25 +187,22 @@ body {
 }
 .main-block_titletwo {
     position: absolute;
+    margin: 385px 0px 0px 185px;
     width: 154px;
     height: 31px;
-    left: 185px;
-    top: 385px;
 
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: calc(39.99 / 30 * 100% );
-
     color: #1B1A17;
 }
 .main-block_text {
     position: absolute;
+    margin: 455px 0px 0px 185px;
     width: 258px;
     height: 34px;
-    left: 185px;
-    top: 455px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -195,22 +212,100 @@ body {
     color: rgba(27, 26, 23, 0.82);
     line-height: calc(21.33 / 21.33 * 100% );
 }
-.main-block_buttons {
-}
 .main-block_button {
     position: absolute;
     width: 205px;
     height: 64px;
     left: 181px;
     top: 553px;
-
     background: #444240;
-
+    color:  #FFFFFF;   
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
-.main-block_image {
+
+.img-stack_main {
+
     position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
+    top: 75.59px;
+    left: 662px;
+    width: 502.63px;
+    height: 804.25px;
+}
+
+.img-stack_main::before {
+    content: '';
+    position: absolute;
+    padding: 0px 90px 0px 6px;
+    top: -100px;
+    left: -210px;
+    width: 496px;
+    height: 944px;
+    background: linear-gradient(180deg, rgba(234, 227, 212, 0) 0%, #EAE3D4 100%);
+    mix-blend-mode: normal;
+    border-radius: 100%;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+    z-index: -1;
+}
+
+.create-line {
+    position: absolute;
+    width: 50px;
+    height: 0px;
+    left: 673px;
+    top: 246px;
+    
+    border-top: 1px solid #8B8371;
+}
+
+.create-line-left {
+    position: absolute;
+    width: 50px;
+    height: 0px;
+    left: 1065px;
+    top: 731px;
+
+    border-top: 1px solid #8B8371;
+}
+
+.create-line-right {
+    position: absolute;
+    width: 50px;
+    height: 0px;
+    left: 120px;
+    top: 357px;
+
+    border-top: 1px solid #8B8371;
+}
+.popular-model {
+    position: absolute;
+    background: #ffffff;
+    top: 850px;
+    width: 1366px;
+    height: 720px;
+}
+.popular-nodel_caption {
+    position: absolute;
+    left: 530px;
+    top: 39px;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+
+    color: #1B1A17;
+}
+
+.see_all {
+    position: absolute;
+    width: 104px;
+    height: 26.5px;
+    left: 1164px;
+    top: 110px;
+
+    color: #1B1A17;
 }
